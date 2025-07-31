@@ -1,0 +1,134 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Pastel Pink Theme */
+  --primary-pink: #f8b5d1;
+  --secondary-pink: #f5c2d3;
+  --light-pink: #fdf2f5;
+  --dark-pink: #e89bb5;
+  --accent-rose: #f4a6c7;
+  --text-dark: #4a4a4a;
+  --text-muted: #7a7a7a;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+/* Custom Button Styles */
+.btn-primary-pink {
+  background-color: var(--primary-pink);
+  border: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-pink:hover {
+  background-color: var(--dark-pink);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-pink {
+  border: 2px solid var(--primary-pink);
+  color: var(--text-dark);
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-pink:hover {
+  background-color: var(--primary-pink);
+  color: var(--text-dark);
+}
+
+/* Gradient Background */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink), var(--light-pink));
+}
+
+/* Card Styles */
+.elegant-card {
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(248, 181, 209, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(248, 181, 209, 0.3);
+}
+
+.elegant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(248, 181, 209, 0.3);
+}
+
+/* Section Styling */
+section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background-color: var(--light-pink);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Text Colors */
+.text-primary-pink {
+  color: var(--primary-pink) !important;
+}
+
+.text-dark-pink {
+  color: var(--dark-pink) !important;
+}
+
+.bg-primary-pink {
+  background-color: var(--primary-pink);
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink);
+}
+
+/* Navbar Styling */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(248, 181, 209, 0.2);
+}
